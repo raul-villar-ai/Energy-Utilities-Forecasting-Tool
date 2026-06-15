@@ -35,7 +35,13 @@ pip install -r requirements.txt
 ### 🎥 Live Application Preview
 <p align="center">
   <video src="assets/demo.mp4" width="90%" controls autoplay loop muted style="display: block; margin: 0 auto;"></video>
+  <br />
+  <a href="https://raw.githubusercontent.com/raul-villar-ai/Energy-Utilities-Forecasting-Tool/main/assets/demo.mp4" target="_blank">
+    📺 <strong>Can't see the video? Click here to watch the full application demo in a new tab!</strong>
+  </a>
 </p>
+
+---
 
 ### 📥 Step 1: Download Utility Ledger Template
 <p align="center">
