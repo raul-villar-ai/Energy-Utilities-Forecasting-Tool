@@ -1,0 +1,25 @@
+# Python bytecode & cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Streamlit application specific metadata
+.streamlit/
+.DS_Store
+Thumbs.db
+
+# 📊 Excel Data Files & Local Backups (Critical Addition)
+data/*.xlsx
+data/*.xls
+archive/
+
+# 📑 Microsoft Office temporary lock files created when Excel is actively open
+~$*.xlsx
+~$*.xls
