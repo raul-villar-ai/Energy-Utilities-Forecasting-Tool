@@ -414,8 +414,11 @@ st.markdown("---")
 
 st.sidebar.header("📁 Data Upload & Settings")
 
-# 📥 Dynamic Template Download Button Setup
-template_path = os.path.join("data", "sample_utility_ledger.xlsx")
+# 📥 BULLETPROOF PATH RESOLUTION:
+# Find exactly where this app.py file lives, then build the path backwards to the data folder
+current_dir = os.path.dirname(os.path.abspath(__file__))
+template_path = os.path.abspath(os.path.join(current_dir, "..", "data", "sample_utility_ledger.xlsx"))
+
 if os.path.exists(template_path):
     with open(template_path, "rb") as f:
         template_bytes = f.read()
@@ -442,7 +445,7 @@ elif os.path.exists(template_path):
 
 if file_bytes is None:
     st.info(
-        "👋 Please upload your data workbook or configure `data/sample_utility_ledger.xlsx` to initialize."
+        "👋 Please upload your data workbook or ensure `data/sample_utility_ledger.xlsx` exists in your repository."
     )
     st.stop()
 
